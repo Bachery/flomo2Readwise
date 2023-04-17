@@ -38,10 +38,13 @@ def sync_flomo_to_readwise():
 	flomo_memos = flomo_database.fetch_flomo_memos(last_sync_time=last_sync_time)
 	logger.log('Number of flomo memos to sync:', len(flomo_memos))
 
-	# Sync flomo memos to Readwise
-	readwise = Readwise(READWISE_ACCESS_TOKEN, logger)
-	readwise.create_highlights_from_memos(flomo_memos)
-	logger.log('Finished syncing flomo memos to Readwise')
+	if len(flomo_memos) > 0:
+		# Sync flomo memos to Readwise
+		readwise = Readwise(READWISE_ACCESS_TOKEN, logger)
+		readwise.create_highlights_from_memos(flomo_memos)
+		logger.log('Finished syncing flomo memos to Readwise')
+	else:
+		logger.log('No flomo memos to sync')
 
 	# Update last sync time
 	update_time = update_last_sync_time()
