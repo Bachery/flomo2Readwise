@@ -1,5 +1,6 @@
 from notion_client import Client
 from datetime import datetime
+from tenacity import retry, wait_exponential, stop_after_attempt
 
 class FlomoDatabase:
 	def __init__(self, api_key, database_id, logger, update_tags=True, skip_tags=['', 'welcome']):
@@ -9,6 +10,7 @@ class FlomoDatabase:
 		self.update_tags = update_tags
 		self.skip_tags = skip_tags
 
+	@retry(wait=wait_exponential(multiplier=1, min=4, max=10), stop=stop_after_attempt(5))
 	def fetch_flomo_memos(self, last_sync_time=None):
 		all_memos = []
 		## get 100 pages at a time
@@ -26,6 +28,7 @@ class FlomoDatabase:
 				break
 		return all_memos
 	
+	@retry(wait=wait_exponential(multiplier=1, min=4, max=10), stop=stop_after_attempt(5))
 	def fetch_flomo_memo(self, page, last_sync_time=None):
 		# Skip pages edited before last_sync_time
 		last_edit_time_str = page['last_edited_time'] # format: '2023-04-17T00:00:00.000Z'
@@ -36,6 +39,8 @@ class FlomoDatabase:
 		# Get tags, which are separated by slash in flomo
 		tags = self.fetch_and_seperate_tags(page)
 		for skip_tag in self.skip_tags:
+			if skip_tag=='' and len(tags)==0:
+				return None
 			if skip_tag in tags:
 				return None
 
@@ -50,7 +55,7 @@ class FlomoDatabase:
 		flomo_memo = {
 			'tags':			tags,
 			'flomo_url':	page['properties']['Link']['url'],
-			'edit_time':	last_edit_time,
+			'edit_time':	last_edit_time_str,
 			'text':			text_content
 		}
 
@@ -58,6 +63,9 @@ class FlomoDatabase:
 			memo = self.parse_dedao_content(tags, text_content)
 			flomo_memo.update(memo)
 		
+		if flomo_memo['text'] == '':
+			return None
+
 		return flomo_memo
 	
 	""" Tools """
@@ -111,12 +119,12 @@ class FlomoDatabase:
 	def parse_dedao_content(self, tags, text):
 		all_tags = '_'.join(tags)
 		# category
-		category = ''
+		category = None
 		if '电子书' in all_tags:	category = 'books'
 		elif '课程' in all_tags:	category = 'podcasts'
 		elif '城邦' in all_tags:	category = 'tweets'
 		# author
-		author = ''
+		author = None
 		author_list = ['万维钢', '卓克', '刘擎', '刘嘉', '何帆', '吴军', '刘润',
 						'薛兆丰', '林楚方', '徐弃郁', '施展', '王立铭', '薄世宁',
 						'王煜全', '香帅', '冯雪', '贾宁', '李筠', '梁宁', '刘苏里']

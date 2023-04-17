@@ -1,4 +1,5 @@
 import requests
+from datetime import datetime
 from dataclasses import dataclass
 from typing import List, Dict, Optional
 
@@ -68,8 +69,8 @@ class Readwise:
 		if 'author' in memo:	hl.author = memo['author']
 		if 'category' in memo:	hl.category = memo['category']
 		hl.note = self.convert_tags_to_note(memo['tags'])
-		hl.highlight_url = memo['url']
-		hl.highlighted_at = self.convert_memotime_to_iso8601(memo['create_time'])
+		hl.highlight_url = memo['flomo_url']
+		hl.highlighted_at = self.convert_memotime_to_iso8601(memo['edit_time'])
 		hl.source_type = 'flomo-Notion'
 		return hl.get_dict()
 
@@ -82,6 +83,6 @@ class Readwise:
 		return memotime.replace('Z', '+00:00')
 
 	def sort_highlights_by_time(self, highlights: List[Dict]) -> List[Dict]:
-		# time format: YYYY-MM-DDTHH:MM:SS+00:00
-		highlights.sort(key=lambda x: x['highlighted_at'])
+		# time format: 'YYYY-MM-DDTHH:MM:SS+00:00'
+		highlights.sort(key=lambda x: datetime.fromisoformat(x['highlighted_at']))
 		return highlights

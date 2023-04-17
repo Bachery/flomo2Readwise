@@ -1,3 +1,4 @@
 loguru==0.7.0
 notion-client==2.0.0
 requests==2.28.2
+tenacity==8.2.2

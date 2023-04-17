@@ -34,23 +34,14 @@ def sync_flomo_to_readwise():
 		logger.log('First sync')
 
 	# Fetch flomo memos
-	try:
-		flomo_database = FlomoDatabase(NOTION_INTEGRATION_TOKEN, NOTION_DATABASE_ID, logger)
-		flomo_memos = flomo_database.fetch_flomo_memos(last_sync_time=last_sync_time)
-		logger.log('Number of flomo memos to sync:', len(flomo_memos))
-	except Exception as e:
-		logger.log('Failed to fetch flomo memos')
-		logger.log(e)
-		return
+	flomo_database = FlomoDatabase(NOTION_INTEGRATION_TOKEN, NOTION_DATABASE_ID, logger)
+	flomo_memos = flomo_database.fetch_flomo_memos(last_sync_time=last_sync_time)
+	logger.log('Number of flomo memos to sync:', len(flomo_memos))
 
 	# Sync flomo memos to Readwise
-	try:
-		readwise = Readwise(READWISE_ACCESS_TOKEN, logger)
-		readwise.create_highlights_from_memos(flomo_memos)
-	except Exception as e:
-		logger.log('Failed to sync flomo memos to Readwise')
-		logger.log(e)
-		return
+	readwise = Readwise(READWISE_ACCESS_TOKEN, logger)
+	readwise.create_highlights_from_memos(flomo_memos)
+	logger.log('Finished syncing flomo memos to Readwise')
 
 	# Update last sync time
 	update_time = update_last_sync_time()
