@@ -25,9 +25,9 @@ jobs:
     - name: Sync flomo from Notion database to Readwise
       run: python flomo2readwise.py
       env:
-        Notion_Integration_Token: ${{ secrets.Notion_Integration_Token }}
-        Notion_Database_ID: ${{ secrets.Notion_Database_ID }}
-        Readwise_Access_Token: ${{ secrets.Readwise_Access_Token }}
+        NOTION_INTEGRATION_TOKEN: ${{ secrets.NOTION_INTEGRATION_TOKEN }}
+        NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+        READWISE_ACCESS_TOKEN: ${{ secrets.READWISE_ACCESS_TOKEN }}
 
     - name: Commit changes
       run: |

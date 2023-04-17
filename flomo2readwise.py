@@ -4,9 +4,9 @@ from flomoDatabase import FlomoDatabase
 from readwise import Readwise
 from logger import loguru_logger
 
-Notion_Integration_Token	= os.environ['NOTION_INTEGRATION_TOKEN']
-Notion_Database_ID			= os.environ['NOTION_DATABASE_ID']
-Readwise_Access_Token		= os.environ['READWISE_ACCESS_TOKEN']
+NOTION_INTEGRATION_TOKEN	= os.environ['NOTION_INTEGRATION_TOKEN']
+NOTION_DATABASE_ID			= os.environ['NOTION_DATABASE_ID']
+READWISE_ACCESS_TOKEN		= os.environ['READWISE_ACCESS_TOKEN']
 
 # Only sync new memos by managing a last sync time
 last_sync_time_file = 'last_sync_time.txt'
@@ -35,7 +35,7 @@ def sync_flomo_to_readwise():
 
 	# Fetch flomo memos
 	try:
-		flomo_database = FlomoDatabase(Notion_Integration_Token, Notion_Database_ID, logger)
+		flomo_database = FlomoDatabase(NOTION_INTEGRATION_TOKEN, NOTION_DATABASE_ID, logger)
 		flomo_memos = flomo_database.fetch_flomo_memos(last_sync_time=last_sync_time)
 		logger.log('Number of flomo memos to sync:', len(flomo_memos))
 	except Exception as e:
@@ -45,7 +45,7 @@ def sync_flomo_to_readwise():
 
 	# Sync flomo memos to Readwise
 	try:
-		readwise = Readwise(Readwise_Access_Token, logger)
+		readwise = Readwise(READWISE_ACCESS_TOKEN, logger)
 		readwise.create_highlights_from_memos(flomo_memos)
 	except Exception as e:
 		logger.log('Failed to sync flomo memos to Readwise')
