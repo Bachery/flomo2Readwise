@@ -1,0 +1,30 @@
+name: Sync flomo from Notion database to Readwise
+
+on:
+  schedule:
+    - cron: '0 3 * * *'  # Runs daily at 03:00 UTC
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Sync flomo from Notion database to Readwise
+      run: python flomo2readwise.py
+      env:
+        Notion_Integration_Token: ${{ secrets.Notion_Integration_Token }}
+        Notion_Database_ID: ${{ secrets.Notion_Database_ID }}
+        Readwise_Access_Token: ${{ secrets.Readwise_Access_Token }}
