@@ -36,18 +36,6 @@ jobs:
         NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
         READWISE_ACCESS_TOKEN: ${{ secrets.READWISE_ACCESS_TOKEN }}
 
-    # - name: Commit changes
-    #   run: |
-    #     git config --local user.name "github-actions"
-    #     git config --local user.email "actions@github.com"
-    #     git add last_sync_time.txt flomo2readwise.log
-    #     git commit -m "Update sync time and log [skip ci]"
-    #     git remote set-url origin https://${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}@github.com/Bachery/flomo2Readwise.git
-    #     git push
-    #   env:
-    #     GH_PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
-
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: Update sync time and log
-        # commit_options: '--no-verify'
