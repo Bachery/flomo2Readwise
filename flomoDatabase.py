@@ -31,7 +31,7 @@ class FlomoDatabase:
 	@retry(wait=wait_exponential(multiplier=1, min=4, max=10), stop=stop_after_attempt(5))
 	def fetch_flomo_memo(self, page, last_sync_time=None):
 		# Skip pages edited before last_sync_time
-		last_edit_time_str = page['last_edited_time'] # format: '2023-04-17T00:00:00.000Z'
+		last_edit_time_str = page['last_edited_time'] # format: '2023-04-17T00:00:00.000Z' and it's UTC time
 		last_edit_time = datetime.strptime(last_edit_time_str, '%Y-%m-%dT%H:%M:%S.%fZ')
 		if last_sync_time and last_edit_time < last_sync_time:
 			return None

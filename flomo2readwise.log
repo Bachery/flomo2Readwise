@@ -1,18 +1,18 @@
-2023-04-17 18:23:33.548 | INFO     | logger:log:13 - First sync
-2023-04-17 18:26:01.405 | INFO     | logger:log:13 - Number of flomo memos to sync: 234
-2023-04-17 18:26:15.260 | INFO     | logger:log:13 - Finished syncing flomo memos to Readwise
-2023-04-17 18:26:15.261 | INFO     | logger:log:13 - Update last sync time: 2023-04-17 18:26:15.260891
-2023-04-17 18:26:15.261 | INFO     | logger:log:13 - Finished
-2023-04-17 18:26:15.261 | INFO     | logger:log:13 - 
-2023-04-17 17:39:14.657 | INFO     | logger:log:13 - Last sync time: 2023-04-17 18:26:15.260891
+2023-04-17 16:23:33.548 | INFO     | logger:log:13 - First sync
+2023-04-17 16:26:01.405 | INFO     | logger:log:13 - Number of flomo memos to sync: 234
+2023-04-17 16:26:15.260 | INFO     | logger:log:13 - Finished syncing flomo memos to Readwise
+2023-04-17 16:26:15.261 | INFO     | logger:log:13 - Update last sync time: 2023-04-17 16:26:15.260891
+2023-04-17 16:26:15.261 | INFO     | logger:log:13 - Finished
+2023-04-17 16:26:15.261 | INFO     | logger:log:13 - 
+2023-04-17 17:39:14.657 | INFO     | logger:log:13 - Last sync time: 2023-04-17 16:26:15.260891
 2023-04-17 17:39:18.856 | INFO     | logger:log:13 - Number of flomo memos to sync: 0
 2023-04-17 17:39:18.856 | INFO     | logger:log:13 - No flomo memos to sync
-2023-04-17 17:39:18.857 | INFO     | logger:log:13 - Update last sync time: 2023-04-17 19:39:18.857051
+2023-04-17 17:39:18.857 | INFO     | logger:log:13 - Update last sync time: 2023-04-17 17:39:18.857051
 2023-04-17 17:39:18.857 | INFO     | logger:log:13 - Finished
 2023-04-17 17:39:18.857 | INFO     | logger:log:13 - 
-2023-04-17 17:46:48.297 | INFO     | logger:log:13 - Last sync time: 2023-04-16 19:39:18.857051
+2023-04-17 17:46:48.297 | INFO     | logger:log:13 - Last sync time: 2023-04-16 17:39:18.857051
 2023-04-17 17:48:22.126 | INFO     | logger:log:13 - Number of flomo memos to sync: 237
 2023-04-17 17:48:23.526 | INFO     | logger:log:13 - Finished syncing flomo memos to Readwise
-2023-04-17 17:48:23.527 | INFO     | logger:log:13 - Update last sync time: 2023-04-17 19:48:23.527236
+2023-04-17 17:48:23.527 | INFO     | logger:log:13 - Update last sync time: 2023-04-17 17:48:23.527236
 2023-04-17 17:48:23.527 | INFO     | logger:log:13 - Finished
 2023-04-17 17:48:23.528 | INFO     | logger:log:13 - 

@@ -9,6 +9,7 @@ NOTION_DATABASE_ID			= os.environ['NOTION_DATABASE_ID']
 READWISE_ACCESS_TOKEN		= os.environ['READWISE_ACCESS_TOKEN']
 
 # Only sync new memos by managing a last sync time
+# Both Github Actions and Notion API are in UTC time zone
 last_sync_time_file = 'last_sync_time.txt'
 # Save all logs to a same file
 logger = loguru_logger('flomo2readwise')
@@ -17,10 +18,10 @@ def get_last_sync_time():
 	if not os.path.exists(last_sync_time_file):
 		return None
 	with open(last_sync_time_file, 'r') as f:
-		return datetime.fromisoformat(f.read()) - timedelta(hours=24)
+		return datetime.fromisoformat(f.read())
 
 def update_last_sync_time():
-	update_time = datetime.now() + timedelta(hours=2)
+	update_time = datetime.now()	# UTC time on Github Actions
 	with open(last_sync_time_file, 'w') as f:
 		f.write(str(update_time))
 	return update_time
