@@ -17,7 +17,7 @@ def get_last_sync_time():
 	if not os.path.exists(last_sync_time_file):
 		return None
 	with open(last_sync_time_file, 'r') as f:
-		return datetime.fromisoformat(f.read())
+		return datetime.fromisoformat(f.read()) - timedelta(hours=24)
 
 def update_last_sync_time():
 	update_time = datetime.now() + timedelta(hours=2)
