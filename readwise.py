@@ -1,5 +1,6 @@
 import requests
 from dataclasses import dataclass
+from typing import List, Dict, Optional
 
 ## Readwise will first check title/author/source_type to determine if it is a new book
 ## then check text to determine if it is a new highlight
