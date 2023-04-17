@@ -1,5 +1,5 @@
 import os
-from datetime import datetime
+from datetime import datetime, timedelta
 from flomoDatabase import FlomoDatabase
 from readwise import Readwise
 from logger import loguru_logger
