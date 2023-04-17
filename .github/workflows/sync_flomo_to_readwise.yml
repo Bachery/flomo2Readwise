@@ -2,7 +2,7 @@ name: Sync flomo from Notion database to Readwise
 
 on:
   schedule:
-    - cron: '6 15 * * *'  # Runs daily at 03:00 UTC
+    - cron: '9 15 * * *'  # Runs daily at 03:00 UTC
 
 jobs:
   sync:
