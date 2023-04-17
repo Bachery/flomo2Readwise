@@ -122,6 +122,7 @@ class FlomoDatabase:
 		category = None
 		if '电子书' in all_tags:	category = 'books'
 		elif '课程' in all_tags:	category = 'podcasts'
+		elif '其他' in all_tags:	category = 'podcasts'
 		elif '城邦' in all_tags:	category = 'tweets'
 		# author
 		author = None
