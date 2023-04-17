@@ -28,3 +28,11 @@ jobs:
         Notion_Integration_Token: ${{ secrets.Notion_Integration_Token }}
         Notion_Database_ID: ${{ secrets.Notion_Database_ID }}
         Readwise_Access_Token: ${{ secrets.Readwise_Access_Token }}
+
+    - name: Commit changes
+      run: |
+        git config --local user.name "github-actions"
+        git config --local user.email "actions@github.com"
+        git add last_sync_time.txt flomo2readwise.log
+        git commit -m "Update sync time and log [skip ci]"
+        git push
