@@ -20,7 +20,7 @@ def get_last_sync_time():
 		return datetime.fromisoformat(f.read())
 
 def update_last_sync_time():
-	update_time = datetime.now()
+	update_time = datetime.now() + timedelta(hours=2)
 	with open(last_sync_time_file, 'w') as f:
 		f.write(str(update_time))
 	return update_time
