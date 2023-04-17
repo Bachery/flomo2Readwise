@@ -4,9 +4,9 @@ from flomoDatabase import FlomoDatabase
 from readwise import Readwise
 from logger import loguru_logger
 
-Notion_Integration_Token	= os.environ['Notion_Integration_Token']
-Notion_Database_ID			= os.environ['Notion_Database_ID']
-Readwise_Access_Token		= os.environ['Readwise_Access_Token']
+Notion_Integration_Token	= os.environ['NOTION_INTEGRATION_TOKEN']
+Notion_Database_ID			= os.environ['NOTION_DATABASE_ID']
+Readwise_Access_Token		= os.environ['READWISE_ACCESS_TOKEN']
 
 # Only sync new memos by managing a last sync time
 last_sync_time_file = 'last_sync_time.txt'
