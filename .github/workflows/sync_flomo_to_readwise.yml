@@ -41,3 +41,5 @@ jobs:
         git commit -m "Update sync time and log [skip ci]"
         git remote set-url origin https://${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}@github.com/Bachery/flomo2Readwise.git
         git push
+      env:
+        GH_PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
