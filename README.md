@@ -3,7 +3,6 @@ Sync flomo memos from Notion database to Readwise by GitHub Action.
 
 通过 GitHub Action，自动将 flomo 笔记从 Notion database 同步至 Readwise。
 
----
 
 ## Preparation
 
@@ -15,7 +14,6 @@ Sync flomo memos from Notion database to Readwise by GitHub Action.
    - 获取该 Notion Database 的 ID
 3. 获取 Readwise Access Token: https://readwise.io/access_token
 
----
 
 ## Usage
 
@@ -30,7 +28,6 @@ Sync flomo memos from Notion database to Readwise by GitHub Action.
 
 设置好以上步骤后，GitHub Actions 将会每天自动运行并将你的 flomo 笔记同步到 Readwise。
 
----
 
 ##  Others
 
