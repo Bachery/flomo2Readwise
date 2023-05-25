@@ -34,7 +34,7 @@ Sync flomo memos from Notion database to Readwise by GitHub Action.
 1. 手动触发执行同步
    > 完成上述设置后，在你的仓库页面，进入 `Actions` → `Sync flomo from Notion database to Readwise`， 点击`Run Workflow`
 2. 修改同步时间
-   > 修改 `.github/workflows/sync_flomo_to_readwise.yml` 文件中以下字段自定义执行时间和频率：
+   > 修改 `.github/workflows/sync_flomo_to_readwise.yml` 文件中以下字段自定义执行时间和频率。规则参考[文档](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule)
    ```
    schedule:
    	- cron: '0 3 * * *'  # Runs daily at 03:00 UTC
