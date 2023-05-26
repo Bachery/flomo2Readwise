@@ -38,8 +38,13 @@ Sync flomo memos from Notion database to Readwise by GitHub Action.
 
 2. 修改同步时间
    
-   修改 `.github/workflows/sync_flomo_to_readwise.yml` 文件中以下字段自定义执行时间和频率。规则请参考[官方文档](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule)
+   修改 `.github/workflows/sync_flomo_to_readwise.yml` 文件中以下字段自定义执行时间和频率。规则请参考[官方文档](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule)。
    ```
    schedule:
    	- cron: '0 3 * * *'  # Runs daily at 03:00 UTC
    ```
+
+
+## Acknowledgments
+
+本项目使用了[stefanzweifel/git-auto-commit-action](https://github.com/stefanzweifel/git-auto-commit-action) 提供的自动提交功能。
