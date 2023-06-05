@@ -310,3 +310,9 @@
 2023-06-04 03:28:17.380 | INFO     | logger:log:13 - Update last sync time: 2023-06-04 03:28:17.380551
 2023-06-04 03:28:17.381 | INFO     | logger:log:13 - Finished
 2023-06-04 03:28:17.381 | INFO     | logger:log:13 - 
+2023-06-05 03:21:03.199 | INFO     | logger:log:13 - Last sync time: 2023-06-04 03:28:17.380551
+2023-06-05 03:21:08.841 | INFO     | logger:log:13 - Number of flomo memos to sync: 0
+2023-06-05 03:21:08.841 | INFO     | logger:log:13 - No flomo memos to sync
+2023-06-05 03:21:08.842 | INFO     | logger:log:13 - Update last sync time: 2023-06-05 03:21:08.842051
+2023-06-05 03:21:08.842 | INFO     | logger:log:13 - Finished
+2023-06-05 03:21:08.843 | INFO     | logger:log:13 - 
