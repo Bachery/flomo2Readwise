@@ -400,3 +400,9 @@
 2023-06-19 03:19:22.328 | INFO     | logger:log:13 - Update last sync time: 2023-06-19 03:19:22.327923
 2023-06-19 03:19:22.328 | INFO     | logger:log:13 - Finished
 2023-06-19 03:19:22.328 | INFO     | logger:log:13 - 
+2023-06-20 03:18:58.395 | INFO     | logger:log:13 - Last sync time: 2023-06-19 03:19:22.327923
+2023-06-20 03:19:09.316 | INFO     | logger:log:13 - Number of flomo memos to sync: 4
+2023-06-20 03:19:09.865 | INFO     | logger:log:13 - Finished syncing flomo memos to Readwise
+2023-06-20 03:19:09.865 | INFO     | logger:log:13 - Update last sync time: 2023-06-20 03:19:09.865797
+2023-06-20 03:19:09.866 | INFO     | logger:log:13 - Finished
+2023-06-20 03:19:09.866 | INFO     | logger:log:13 - 
