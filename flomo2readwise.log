@@ -436,3 +436,9 @@
 2023-06-25 03:35:51.556 | INFO     | logger:log:13 - Update last sync time: 2023-06-25 03:35:51.555950
 2023-06-25 03:35:51.556 | INFO     | logger:log:13 - Finished
 2023-06-25 03:35:51.556 | INFO     | logger:log:13 - 
+2023-06-26 03:33:17.824 | INFO     | logger:log:13 - Last sync time: 2023-06-25 03:35:51.555950
+2023-06-26 03:33:19.622 | INFO     | logger:log:13 - Number of flomo memos to sync: 0
+2023-06-26 03:33:19.622 | INFO     | logger:log:13 - No flomo memos to sync
+2023-06-26 03:33:19.623 | INFO     | logger:log:13 - Update last sync time: 2023-06-26 03:33:19.623183
+2023-06-26 03:33:19.623 | INFO     | logger:log:13 - Finished
+2023-06-26 03:33:19.623 | INFO     | logger:log:13 - 
