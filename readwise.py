@@ -65,9 +65,9 @@ class Readwise:
 
 	def convert_memo_to_highlight(self, memo: dict) -> Dict:
 		hl = ReadwiseHighlight(text=memo['text'])
+		if 'title' in memo:		hl.title = memo['title']
 		if 'author' in memo:	hl.author = memo['author']
 		if 'category' in memo:	hl.category = memo['category']
-		if 'title' in memo:		hl.title = memo['title']
 		hl.note = self.convert_tags_to_note(memo['tags'])
 		hl.highlight_url = memo['flomo_url']
 		hl.highlighted_at = self.convert_memotime_to_iso8601(memo['edit_time'])
