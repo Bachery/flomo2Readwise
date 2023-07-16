@@ -34,7 +34,6 @@ def sync_flomo_to_readwise():
 	else:
 		logger.log('First sync')
 
-	logger.log('0')
 	# Fetch flomo memos
 	flomo_database = FlomoDatabase(NOTION_INTEGRATION_TOKEN, NOTION_DATABASE_ID, logger)
 	flomo_memos = flomo_database.fetch_flomo_memos(last_sync_time=last_sync_time)
