@@ -68,10 +68,6 @@ class Readwise:
 		if 'author' in memo:	hl.author = memo['author']
 		if 'category' in memo:	hl.category = memo['category']
 		if 'title' in memo:		hl.title = memo['title']
-		else:
-			title = memo['text'].split('\n')[0]
-			if len(title) > 20: title = title[:20] + '...'
-			hl.title = title
 		hl.note = self.convert_tags_to_note(memo['tags'])
 		hl.highlight_url = memo['flomo_url']
 		hl.highlighted_at = self.convert_memotime_to_iso8601(memo['edit_time'])
