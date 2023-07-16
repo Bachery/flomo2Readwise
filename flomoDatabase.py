@@ -17,19 +17,20 @@ class FlomoDatabase:
 		all_memos = []
 		## get 100 pages at a time
 		result_list = self.notion.databases.query(self.database_id)
+		self.logger.log('3')
 		while result_list:
 			## save content of each page
 			for page in result_list['results']:
 				flomo_memo = self.fetch_flomo_memo(page, last_sync_time=last_sync_time)
 				if flomo_memo:
 					all_memos.append(flomo_memo)
-			self.logger.log('3')
+			self.logger.log('4')
 			## get next 100 pages, until no more pages
 			if "next_cursor" in result_list and result_list["next_cursor"]:
 				result_list = self.notion.databases.query(self.database_id, start_cursor=result_list["next_cursor"])
 			else:
 				break
-		self.logger.log('4')
+		self.logger.log('5')
 		return all_memos
 	
 	@retry(wait=wait_exponential(multiplier=1, min=4, max=10), stop=stop_after_attempt(5))
