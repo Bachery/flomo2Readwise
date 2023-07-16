@@ -9,9 +9,11 @@ class FlomoDatabase:
 		self.logger = logger
 		self.update_tags = update_tags
 		self.skip_tags = skip_tags
+		self.logger.log('1')
 
 	@retry(wait=wait_exponential(multiplier=1, min=4, max=10), stop=stop_after_attempt(5))
 	def fetch_flomo_memos(self, last_sync_time=None):
+		self.logger.log('2')
 		all_memos = []
 		## get 100 pages at a time
 		result_list = self.notion.databases.query(self.database_id)
@@ -21,11 +23,13 @@ class FlomoDatabase:
 				flomo_memo = self.fetch_flomo_memo(page, last_sync_time=last_sync_time)
 				if flomo_memo:
 					all_memos.append(flomo_memo)
+			self.logger.log('3')
 			## get next 100 pages, until no more pages
 			if "next_cursor" in result_list and result_list["next_cursor"]:
 				result_list = self.notion.databases.query(self.database_id, start_cursor=result_list["next_cursor"])
 			else:
 				break
+		self.logger.log('4')
 		return all_memos
 	
 	@retry(wait=wait_exponential(multiplier=1, min=4, max=10), stop=stop_after_attempt(5))
