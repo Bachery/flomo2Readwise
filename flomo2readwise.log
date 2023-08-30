@@ -829,3 +829,9 @@
 2023-08-29 03:18:27.468 | INFO     | logger:log:13 - Update last sync time: 2023-08-29 03:18:27.467910
 2023-08-29 03:18:27.468 | INFO     | logger:log:13 - Finished
 2023-08-29 03:18:27.468 | INFO     | logger:log:13 - 
+2023-08-30 03:17:49.001 | INFO     | logger:log:13 - Last sync time: 2023-08-29 03:18:27.467910
+2023-08-30 03:17:52.532 | INFO     | logger:log:13 - Number of flomo memos to sync: 0
+2023-08-30 03:17:52.533 | INFO     | logger:log:13 - No flomo memos to sync
+2023-08-30 03:17:52.533 | INFO     | logger:log:13 - Update last sync time: 2023-08-30 03:17:52.533338
+2023-08-30 03:17:52.533 | INFO     | logger:log:13 - Finished
+2023-08-30 03:17:52.533 | INFO     | logger:log:13 - 
