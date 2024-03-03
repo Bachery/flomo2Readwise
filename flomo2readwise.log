@@ -1945,3 +1945,9 @@
 2024-03-02 03:17:30.943 | INFO     | logger:log:13 - Update last sync time: 2024-03-02 03:17:30.943423
 2024-03-02 03:17:30.943 | INFO     | logger:log:13 - Finished
 2024-03-02 03:17:30.943 | INFO     | logger:log:13 - 
+2024-03-03 03:17:45.496 | INFO     | logger:log:13 - Last sync time: 2024-03-02 03:17:30.943423
+2024-03-03 03:17:49.880 | INFO     | logger:log:13 - Number of flomo memos to sync: 0
+2024-03-03 03:17:49.880 | INFO     | logger:log:13 - No flomo memos to sync
+2024-03-03 03:17:49.880 | INFO     | logger:log:13 - Update last sync time: 2024-03-03 03:17:49.880729
+2024-03-03 03:17:49.881 | INFO     | logger:log:13 - Finished
+2024-03-03 03:17:49.881 | INFO     | logger:log:13 - 
