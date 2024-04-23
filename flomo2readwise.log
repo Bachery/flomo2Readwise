@@ -2251,3 +2251,9 @@
 2024-04-22 03:20:36.624 | INFO     | logger:log:13 - Update last sync time: 2024-04-22 03:20:36.624795
 2024-04-22 03:20:36.625 | INFO     | logger:log:13 - Finished
 2024-04-22 03:20:36.625 | INFO     | logger:log:13 - 
+2024-04-23 03:19:29.469 | INFO     | logger:log:13 - Last sync time: 2024-04-22 03:20:36.624795
+2024-04-23 03:19:33.557 | INFO     | logger:log:13 - Number of flomo memos to sync: 1
+2024-04-23 03:19:34.338 | INFO     | logger:log:13 - Finished syncing flomo memos to Readwise
+2024-04-23 03:19:34.340 | INFO     | logger:log:13 - Update last sync time: 2024-04-23 03:19:34.339428
+2024-04-23 03:19:34.340 | INFO     | logger:log:13 - Finished
+2024-04-23 03:19:34.341 | INFO     | logger:log:13 - 
