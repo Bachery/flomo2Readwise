@@ -2293,3 +2293,9 @@
 2024-04-29 03:20:10.876 | INFO     | logger:log:13 - Update last sync time: 2024-04-29 03:20:10.876391
 2024-04-29 03:20:10.876 | INFO     | logger:log:13 - Finished
 2024-04-29 03:20:10.876 | INFO     | logger:log:13 - 
+2024-04-30 03:19:52.303 | INFO     | logger:log:13 - Last sync time: 2024-04-29 03:20:10.876391
+2024-04-30 03:19:55.124 | INFO     | logger:log:13 - Number of flomo memos to sync: 0
+2024-04-30 03:19:55.124 | INFO     | logger:log:13 - No flomo memos to sync
+2024-04-30 03:19:55.125 | INFO     | logger:log:13 - Update last sync time: 2024-04-30 03:19:55.124984
+2024-04-30 03:19:55.125 | INFO     | logger:log:13 - Finished
+2024-04-30 03:19:55.125 | INFO     | logger:log:13 - 
