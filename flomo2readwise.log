@@ -4681,3 +4681,9 @@
 2025-06-01 04:02:01.099 | INFO     | logger:log:13 - Update last sync time: 2025-06-01 04:02:01.099195
 2025-06-01 04:02:01.099 | INFO     | logger:log:13 - Finished
 2025-06-01 04:02:01.099 | INFO     | logger:log:13 - 
+2025-06-02 03:54:15.750 | INFO     | logger:log:13 - Last sync time: 2025-06-01 04:02:01.099195
+2025-06-02 03:54:20.271 | INFO     | logger:log:13 - Number of flomo memos to sync: 0
+2025-06-02 03:54:20.271 | INFO     | logger:log:13 - No flomo memos to sync
+2025-06-02 03:54:20.271 | INFO     | logger:log:13 - Update last sync time: 2025-06-02 03:54:20.271605
+2025-06-02 03:54:20.271 | INFO     | logger:log:13 - Finished
+2025-06-02 03:54:20.272 | INFO     | logger:log:13 - 
