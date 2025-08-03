@@ -5053,3 +5053,9 @@
 2025-08-02 03:59:22.611 | INFO     | logger:log:13 - Update last sync time: 2025-08-02 03:59:22.611021
 2025-08-02 03:59:22.611 | INFO     | logger:log:13 - Finished
 2025-08-02 03:59:22.611 | INFO     | logger:log:13 - 
+2025-08-03 04:13:44.072 | INFO     | logger:log:13 - Last sync time: 2025-08-02 03:59:22.611021
+2025-08-03 04:13:55.176 | INFO     | logger:log:13 - Number of flomo memos to sync: 0
+2025-08-03 04:13:55.176 | INFO     | logger:log:13 - No flomo memos to sync
+2025-08-03 04:13:55.176 | INFO     | logger:log:13 - Update last sync time: 2025-08-03 04:13:55.176674
+2025-08-03 04:13:55.177 | INFO     | logger:log:13 - Finished
+2025-08-03 04:13:55.177 | INFO     | logger:log:13 - 
