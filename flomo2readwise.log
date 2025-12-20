@@ -5887,3 +5887,9 @@
 2025-12-19 04:00:09.708 | INFO     | logger:log:13 - Update last sync time: 2025-12-19 04:00:09.708432
 2025-12-19 04:00:09.708 | INFO     | logger:log:13 - Finished
 2025-12-19 04:00:09.709 | INFO     | logger:log:13 - 
+2025-12-20 03:51:39.093 | INFO     | logger:log:13 - Last sync time: 2025-12-19 04:00:09.708432
+2025-12-20 03:51:45.374 | INFO     | logger:log:13 - Number of flomo memos to sync: 0
+2025-12-20 03:51:45.374 | INFO     | logger:log:13 - No flomo memos to sync
+2025-12-20 03:51:45.374 | INFO     | logger:log:13 - Update last sync time: 2025-12-20 03:51:45.374557
+2025-12-20 03:51:45.374 | INFO     | logger:log:13 - Finished
+2025-12-20 03:51:45.375 | INFO     | logger:log:13 - 
