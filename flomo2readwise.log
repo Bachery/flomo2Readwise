@@ -5905,3 +5905,9 @@
 2025-12-22 04:08:02.506 | INFO     | logger:log:13 - Update last sync time: 2025-12-22 04:08:02.505968
 2025-12-22 04:08:02.506 | INFO     | logger:log:13 - Finished
 2025-12-22 04:08:02.506 | INFO     | logger:log:13 - 
+2025-12-23 04:02:18.363 | INFO     | logger:log:13 - Last sync time: 2025-12-22 04:08:02.505968
+2025-12-23 04:02:21.501 | INFO     | logger:log:13 - Number of flomo memos to sync: 0
+2025-12-23 04:02:21.502 | INFO     | logger:log:13 - No flomo memos to sync
+2025-12-23 04:02:21.502 | INFO     | logger:log:13 - Update last sync time: 2025-12-23 04:02:21.502406
+2025-12-23 04:02:21.502 | INFO     | logger:log:13 - Finished
+2025-12-23 04:02:21.502 | INFO     | logger:log:13 - 
