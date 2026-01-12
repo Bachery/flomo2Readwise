@@ -6025,3 +6025,9 @@
 2026-01-11 04:13:58.273 | INFO     | logger:log:13 - Update last sync time: 2026-01-11 04:13:58.273136
 2026-01-11 04:13:58.273 | INFO     | logger:log:13 - Finished
 2026-01-11 04:13:58.273 | INFO     | logger:log:13 - 
+2026-01-12 04:14:58.696 | INFO     | logger:log:13 - Last sync time: 2026-01-11 04:13:58.273136
+2026-01-12 04:15:04.422 | INFO     | logger:log:13 - Number of flomo memos to sync: 0
+2026-01-12 04:15:04.422 | INFO     | logger:log:13 - No flomo memos to sync
+2026-01-12 04:15:04.422 | INFO     | logger:log:13 - Update last sync time: 2026-01-12 04:15:04.422548
+2026-01-12 04:15:04.422 | INFO     | logger:log:13 - Finished
+2026-01-12 04:15:04.423 | INFO     | logger:log:13 - 
