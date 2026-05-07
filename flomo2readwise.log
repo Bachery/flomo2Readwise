@@ -6715,3 +6715,9 @@
 2026-05-06 06:09:58.588 | INFO     | logger:log:13 - Update last sync time: 2026-05-06 06:09:58.587823
 2026-05-06 06:09:58.588 | INFO     | logger:log:13 - Finished
 2026-05-06 06:09:58.588 | INFO     | logger:log:13 - 
+2026-05-07 06:15:07.216 | INFO     | logger:log:13 - Last sync time: 2026-05-06 06:09:58.587823
+2026-05-07 06:15:11.090 | INFO     | logger:log:13 - Number of flomo memos to sync: 0
+2026-05-07 06:15:11.091 | INFO     | logger:log:13 - No flomo memos to sync
+2026-05-07 06:15:11.091 | INFO     | logger:log:13 - Update last sync time: 2026-05-07 06:15:11.091363
+2026-05-07 06:15:11.091 | INFO     | logger:log:13 - Finished
+2026-05-07 06:15:11.091 | INFO     | logger:log:13 - 
