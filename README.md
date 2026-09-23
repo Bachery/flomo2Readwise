@@ -1,3 +1,5 @@
+
+
 # flomo2Readwise
 Sync flomo memos from Notion database to Readwise by GitHub Action.
 
@@ -20,7 +22,7 @@ Sync flomo memos from Notion database to Readwise by GitHub Action.
 1. Fork 这个项目到你自己的 GitHub 账户中
 2. 删除 `last_sync_time.txt` 文件和 `flomo2readwise.log` 文件
    > 首次执行前请删除这两个文件。
-   > 每次执行后，该项目会更新`last_sync_time.txt`文件，记录执行时间，以便在下次执行时只同步新的笔记。
+   > 每次执行后，该项目会更新`last_sync_time.txt`文件，记录上次同步时间，以便后续仅同步在此时间之后创建或编辑的笔记。
    > 值得注意的是，Github Action 和 Notion 都使用 UTC 时间。
 3. 在你的仓库设置页面，进入 `Settings` → `Secrets and variables` → `Actions` 并添加以下 Repository secrets:
    - `NOTION_INTEGRATION_TOKEN`: 你的 Notion Integration Token
