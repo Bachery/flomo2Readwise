@@ -7573,3 +7573,9 @@
 2026-09-27 09:08:50.245 | INFO     | logger:log:13 - Update last sync time: 2026-09-27 09:08:50.245599
 2026-09-27 09:08:50.246 | INFO     | logger:log:13 - Finished
 2026-09-27 09:08:50.246 | INFO     | logger:log:13 - 
+2026-09-28 09:37:47.208 | INFO     | logger:log:13 - Last sync time: 2026-09-27 09:08:50.245599
+2026-09-28 09:37:51.085 | INFO     | logger:log:13 - Number of flomo memos to sync: 0
+2026-09-28 09:37:51.085 | INFO     | logger:log:13 - No flomo memos to sync
+2026-09-28 09:37:51.086 | INFO     | logger:log:13 - Update last sync time: 2026-09-28 09:37:51.086143
+2026-09-28 09:37:51.086 | INFO     | logger:log:13 - Finished
+2026-09-28 09:37:51.086 | INFO     | logger:log:13 - 
